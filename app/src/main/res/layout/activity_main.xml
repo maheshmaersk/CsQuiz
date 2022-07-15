@@ -18,9 +18,10 @@
         android:text="Hello World" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World" />
+        android:text="Gender" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -47,4 +48,51 @@
         android:layout_height="wrap_content"
         android:text="Developed by Amv Labs" />
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cbAcceptTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept " />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; Conditions" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbFeMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FeMale" />
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llDynamicCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spCountries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/countries" />
 </androidx.appcompat.widget.LinearLayoutCompat>
