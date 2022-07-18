@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         val genderButton = findViewById<AppCompatButton>(R.id.btGender)
         val llddd = findViewById<LinearLayoutCompat>(R.id.llDynamicCheck)
         val countries = findViewById<AppCompatSpinner>(R.id.spCountries)
+        val music = findViewById<AppCompatSeekBar>(R.id.sbMusic)
+        val rate = findViewById<AppCompatRatingBar>(R.id.rbRate)
+
+
+
         loginButton.setOnClickListener {
             Log.d("TestLogs", "Login Bt Click")
             startActivity(Intent(it.context, OnBoardingActivity::class.java))
@@ -72,5 +77,25 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
+
+        music.incrementProgressBy(10)
+        music.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
+            override fun onProgressChanged(seekbar: SeekBar?, progress: Int, fromUser: Boolean) {
+                Log.e("SeekBar","onProgressChanged $progress")
+            }
+
+            override fun onStartTrackingTouch(p0: SeekBar?) {
+                Log.e("SeekBar","onStartTrackingTouch")
+            }
+
+            override fun onStopTrackingTouch(p0: SeekBar?) {
+                Log.e("SeekBar","onStopTrackingTouch ${p0?.progress}")
+            }
+        })
+
+        rate.onRatingBarChangeListener =
+            RatingBar.OnRatingBarChangeListener { p0, p1, p2 -> Log.e("RatingBar","progress $p1") }
+
     }
 }

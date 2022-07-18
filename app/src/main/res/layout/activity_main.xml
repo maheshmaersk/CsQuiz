@@ -95,4 +95,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/countries" />
+
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/sbMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:min="10" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rbRate"
+        android:layout_width="wrap_content"
+        android:stepSize="0.5"
+        android:numStars="7"
+        android:layout_height="wrap_content" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>
