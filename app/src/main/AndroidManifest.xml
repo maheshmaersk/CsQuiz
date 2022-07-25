@@ -16,6 +16,10 @@
         android:theme="@style/Theme.CsQuiz"
         tools:targetApi="31">
         <activity
+            android:name=".HomeActivity"
+            android:label="Welcome"
+            android:exported="false" />
+        <activity
             android:name=".RecyceActivity"
             android:exported="true">
             <intent-filter>
@@ -26,17 +30,16 @@
         </activity>
         <activity
             android:name=".FragmentTestsActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".OnBoardingActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
