@@ -29,4 +29,9 @@
         android:orderInCategory="5"
         android:title="Logout" />
 
+    <item
+        android:id="@+id/menu_dialog"
+        android:orderInCategory="5"
+        android:title="Sample Code" />
+
 </menu>

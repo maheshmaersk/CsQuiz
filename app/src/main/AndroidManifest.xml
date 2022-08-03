@@ -16,9 +16,23 @@
         android:theme="@style/Theme.CsQuiz"
         tools:targetApi="31">
         <activity
+            android:name=".BarrelActivity"
+            android:exported="false"
+            android:label="@string/title_activity_barrel"
+            android:theme="@style/Theme.CsQuiz.NoActionBar" />
+        <activity
+            android:name=".AmazonActivity"
+            android:exported="false"
+            android:label="@string/title_activity_amazon" />
+        <activity
+            android:name=".FlipkartActivity"
+            android:exported="false"
+            android:label="@string/title_activity_flipkart"
+            android:theme="@style/Theme.CsQuiz.NoActionBar" />
+        <activity
             android:name=".HomeActivity"
-            android:label="Welcome"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Welcome" />
         <activity
             android:name=".RecyceActivity"
             android:exported="true">
@@ -39,7 +53,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -113,7 +113,7 @@ class RecyceActivity : AppCompatActivity() {
                 return true
             }
             R.id.menu_logout -> {
-
+                startActivity(Intent(applicationContext,AmazonActivity::class.java))
                 return true
             }
             R.id.menu_profile -> {
@@ -129,6 +129,11 @@ class RecyceActivity : AppCompatActivity() {
                 return true
             }
             R.id.menu_settings -> {
+                startActivity(Intent(applicationContext,FlipkartActivity::class.java))
+                return true
+            }
+            R.id.menu_dialog -> {
+                startActivity(Intent(applicationContext, BarrelActivity::class.java))
                 return true
             }
             else -> {
