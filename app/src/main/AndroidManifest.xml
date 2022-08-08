@@ -16,6 +16,15 @@
         android:theme="@style/Theme.CsQuiz"
         tools:targetApi="31">
         <activity
+            android:name=".AnimationPracticeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".BarrelActivity"
             android:exported="false"
             android:label="@string/title_activity_barrel"
@@ -35,13 +44,7 @@
             android:label="Welcome" />
         <activity
             android:name=".RecyceActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".FragmentTestsActivity"
             android:exported="true" />

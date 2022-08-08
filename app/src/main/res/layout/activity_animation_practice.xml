@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimationPracticeActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/animIma"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maxresdefau" />
+
+    <Button
+        android:id="@+id/btFade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Fade In"
+        app:layout_constraintEnd_toStartOf="@+id/btFadeout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animIma" />
+
+    <Button
+        android:id="@+id/btFadeout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fade Out"
+        app:layout_constraintBottom_toBottomOf="@+id/btFade"
+        app:layout_constraintEnd_toStartOf="@+id/btZoom"
+        app:layout_constraintStart_toEndOf="@+id/btFade"
+        app:layout_constraintTop_toTopOf="@+id/btFade" />
+
+    <Button
+        android:id="@+id/btZoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zoom In"
+        app:layout_constraintBottom_toBottomOf="@+id/btFade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btFadeout"
+        app:layout_constraintTop_toTopOf="@+id/btFade" />
+
+    <Button
+        android:id="@+id/btZoomOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Zoom Out"
+        app:layout_constraintEnd_toStartOf="@+id/btSlideUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btFade" />
+
+    <Button
+        android:id="@+id/btSlideUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide Up"
+        app:layout_constraintBottom_toBottomOf="@+id/btZoomOut"
+        app:layout_constraintEnd_toStartOf="@+id/btSlideDown"
+        app:layout_constraintStart_toEndOf="@+id/btZoomOut"
+        app:layout_constraintTop_toTopOf="@+id/btZoomOut" />
+
+    <Button
+        android:id="@+id/btSlideDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide Down"
+        app:layout_constraintBottom_toBottomOf="@+id/btZoomOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btSlideUp"
+        app:layout_constraintTop_toTopOf="@+id/btZoomOut" />
+
+    <Button
+        android:id="@+id/btt2s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Text To Speech"
+        app:layout_constraintEnd_toStartOf="@+id/bts2p"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btZoomOut" />
+
+    <Button
+        android:id="@+id/bts2p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speech To Text"
+        app:layout_constraintBottom_toBottomOf="@+id/btt2s"
+        app:layout_constraintEnd_toStartOf="@+id/btWebv"
+        app:layout_constraintStart_toEndOf="@+id/btt2s"
+        app:layout_constraintTop_toTopOf="@+id/btt2s" />
+
+    <Button
+        android:id="@+id/btWebv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Webview"
+        app:layout_constraintBottom_toBottomOf="@+id/btt2s"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bts2p"
+        app:layout_constraintTop_toTopOf="@+id/btt2s" />
+
+    <TextView
+        android:id="@+id/tvTextExa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speech Sample"
+        app:layout_constraintEnd_toStartOf="@+id/tvSpeechExa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btt2s" />
+
+    <EditText
+        android:id="@+id/etSpeechExa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Text Sample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextExa"
+        app:layout_constraintTop_toBottomOf="@+id/btt2s" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

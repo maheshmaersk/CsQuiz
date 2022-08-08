@@ -10,9 +10,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.DatePicker
+import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.amvlabs.csquiz.databinding.FragmentFirstBinding
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import java.util.*
 
 /**
@@ -35,7 +37,7 @@ class FirstFragment : Fragment() {
     ): View? {
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
-        mContext = binding.textviewFirst.context
+        mContext = binding.buttonFirst.context
         return binding.root
 
     }
@@ -55,6 +57,12 @@ class FirstFragment : Fragment() {
         }
         binding.btTimePicker.setOnClickListener {
             showTime()
+        }
+        binding.btBottomSheet.setOnClickListener {
+            showBottomSheet()
+        }
+
+        binding.btBottomSheetDialog.setOnClickListener {
         }
     }
 
@@ -98,6 +106,16 @@ class FirstFragment : Fragment() {
             binding.tvTimeSelected.text = "$hourOfDay:$minutes"
         }
         TimePickerDialog(mContext,timse,cal.get(Calendar.HOUR_OF_DAY),cal.get(Calendar.MINUTE),true).show()
+    }
+
+    fun showBottomSheet() {
+        val bDialog = BottomSheetDialog(mContext)
+        bDialog.setContentView(R.layout.layout_bottom_sheet)
+        val amsd = bDialog.findViewById<TextView>(R.id.tvTitle)
+        amsd?.setOnClickListener {
+            bDialog.dismiss()
+        }
+        bDialog.show()
     }
 
     override fun onDestroyView() {
