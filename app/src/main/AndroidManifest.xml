@@ -4,6 +4,11 @@
     package="com.amvlabs.csquiz">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -16,14 +21,23 @@
         android:theme="@style/Theme.CsQuiz"
         tools:targetApi="31">
         <activity
-            android:name=".AnimationPracticeActivity"
+            android:name=".ImplActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SET_TIMER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".AnimationPracticeActivity"
+            android:exported="true" />
+
         <activity
             android:name=".BarrelActivity"
             android:exported="false"
@@ -44,7 +58,7 @@
             android:label="Welcome" />
         <activity
             android:name=".RecyceActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".FragmentTestsActivity"
             android:exported="true" />

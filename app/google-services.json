@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "726335612872",
+    "project_id": "eveningbatchdemo",
+    "storage_bucket": "eveningbatchdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726335612872:android:182186d265cf5f819242fd",
+        "android_client_info": {
+          "package_name": "com.amvlabs.csquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726335612872-nqmbs7819petcnbt7fa6e7t46vngfcoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3QqwzqwWKUOcVTix0bUE4pInlwTTWvgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726335612872-nqmbs7819petcnbt7fa6e7t46vngfcoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
