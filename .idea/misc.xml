@@ -11,10 +11,12 @@
         <entry key="app/src/main/res/layout/activity_flipkart.xml" value="0.3220338983050847" />
         <entry key="app/src/main/res/layout/activity_fragment_tests.xml" value="0.33125" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_impl.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3338541666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3157894736842105" />
         <entry key="app/src/main/res/layout/activity_on_boarding.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_recyce.xml" value="0.3157894736842105" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1484375" />
         <entry key="app/src/main/res/layout/app_bar_flipkart.xml" value="0.25" />
         <entry key="app/src/main/res/layout/banner_item_adapter.xml" value="0.1" />
         <entry key="app/src/main/res/layout/content_barrel.xml" value="0.1" />
