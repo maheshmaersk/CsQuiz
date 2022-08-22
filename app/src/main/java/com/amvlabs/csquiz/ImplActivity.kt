@@ -61,6 +61,10 @@ class ImplActivity : AppCompatActivity() {
             startTimer("Test Timer", 30)
         }
 
+        binding.btSqlite.setOnClickListener {
+            startActivity(Intent(applicationContext, SqliteDemoActivity::class.java))
+        }
+
     }
 
     fun startTimer(message: String, seconds: Int) {

@@ -21,6 +21,9 @@
         android:theme="@style/Theme.CsQuiz"
         tools:targetApi="31">
         <activity
+            android:name=".SqliteDemoActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
