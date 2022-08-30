@@ -3,8 +3,10 @@ package com.amvlabs.csquiz
 import android.Manifest
 import android.app.Activity
 import android.content.ActivityNotFoundException
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.content.res.Resources
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.provider.AlarmClock
@@ -26,9 +28,9 @@ import com.google.gson.Gson
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.create
 
 class ImplActivity : AppCompatActivity() {
+    var context: Context? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,6 +63,11 @@ class ImplActivity : AppCompatActivity() {
             startTimer("Test Timer", 30)
         }
 
+        binding.btLanguage.setOnClickListener {
+            context = LocaleHelper().setLocale(this, "ta")
+            binding.btTimer.text = context?.resources?.getString(R.string.timer)
+        }
+
         binding.btSqlite.setOnClickListener {
             startActivity(Intent(applicationContext, SqliteDemoActivity::class.java))
         }
@@ -81,10 +88,10 @@ class ImplActivity : AppCompatActivity() {
 
     fun callUserList() {
         val apiInte: APIInterface = APIClient().getClient()!!.create(APIInterface::class.java)
-        apiInte.getUsersList().enqueue(object : Callback<User>{
+        apiInte.getUsersList().enqueue(object : Callback<User> {
             override fun onResponse(call: Call<User>, response: Response<User>) {
                 val userD = response.body()
-                Log.e("UserResponse",response.body().toString())
+                Log.e("UserResponse", response.body().toString())
                 val dat = userD?.userList
             }
 

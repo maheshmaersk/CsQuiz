@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CsQuiz</string>
-    <string name="login">Login</string>
+    <string name="login">लॉग इन करें</string>
     <string name="on_boarding_screen">On Boarding Screen</string>
-    <string name="username">Username</string>
+    <string name="username">उपयोगकर्ता नाम</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -42,10 +43,10 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="permission_required">Camera access is required to display the camera preview.</string>
     <string name="ok">OK</string>
-    <string name="call">Call</string>
-    <string name="camera">Camera</string>
-    <string name="timer">Timer</string>
-    <string name="sqlite">Database</string>
-    <string name="phone">Phone</string>
+    <string name="call">बुलाना</string>
+    <string name="camera">कैमरा</string>
+    <string name="timer">घड़ी</string>
+    <string name="sqlite">डेटाबेस</string>
+    <string name="phone">फ़ोन</string>
     <string name="permission_granted">Permission is granted. You would use the camera now.</string>
 </resources>
